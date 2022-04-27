@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrogRiverOne", "FrogRiverOne\FrogRiverOne.csproj", "{EE016FA9-00FD-40DA-B918-1841736465DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrogRiverOneTests", "FrogRiverOneTests\FrogRiverOneTests.csproj", "{4920A13B-869F-4523-BCDC-105BD861BE59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE016FA9-00FD-40DA-B918-1841736465DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE016FA9-00FD-40DA-B918-1841736465DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE016FA9-00FD-40DA-B918-1841736465DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE016FA9-00FD-40DA-B918-1841736465DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4920A13B-869F-4523-BCDC-105BD861BE59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4920A13B-869F-4523-BCDC-105BD861BE59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4920A13B-869F-4523-BCDC-105BD861BE59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4920A13B-869F-4523-BCDC-105BD861BE59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {03668270-A34C-4698-BBD1-3FA3414BEE44}
+	EndGlobalSection
+EndGlobal

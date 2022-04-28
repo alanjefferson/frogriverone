@@ -10,27 +10,22 @@ namespace FrogRiverOne
 	{
 		public int solution(int X, int[] A)
 		{
-			int position = 0;
-			int index = 0;
+            int occupiedPositions = 0;
+            bool[] leavesInPosition = new bool[X + 1];
 
-			for(int i=0; i < A.Length; i++)
-				if (A[i] == X) {
-					index = i;
-					position = A[i];
-					break;
-				}
+            for (int i = 0; i < A.Length; i++)
+            {
+                int position = A[i];
+                if (position <= X && !leavesInPosition[position]) {
+                    leavesInPosition[position] = true;
+                    occupiedPositions++;
+                }
 
-			int[] B = new int[index+1];
-			for (int i = 0; i <= index; i++)
-				B[i] = A[i];
+                if (occupiedPositions == X)
+                    return i;
+            }
 
-			for (int j=position; j > 0; j--)
-				if (!B.Contains(j)) {
-					index = -1;
-					break;
-				}
-
-			return index;
-		}
+            return -1;
+        }
 	}
 }

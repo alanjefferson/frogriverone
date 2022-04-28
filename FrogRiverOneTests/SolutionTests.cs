@@ -14,10 +14,24 @@ namespace FrogRiverOneTests
 		}
 
 		[Test]
-		public void Test1()
+		public void FrogRiverOne_Test1()
 		{
 			int result = _solution.solution(5, new int[] { 1, 3, 1, 4, 2, 3, 5, 4 });
 			Assert.AreEqual(6, result);
+		}
+
+		[Test]
+		public void FrogRiverOne_Test2()
+		{
+			int result = _solution.solution(5, new int[] { 1, 3, 1, 4, 1, 3, 5, 4 });
+			Assert.AreEqual(-1, result);
+		}
+
+		[Test]
+		public void FrogRiverOne_Test3()
+		{
+			int result = _solution.solution(6, new int[] { 1, 3, 1, 4, 2, 3, 5, 4, 6 });
+			Assert.AreEqual(8, result);
 		}
 	}
 }

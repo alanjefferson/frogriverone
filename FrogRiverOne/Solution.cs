@@ -10,7 +10,27 @@ namespace FrogRiverOne
 	{
 		public int solution(int X, int[] A)
 		{
-			return 0;
+			int position = 0;
+			int index = 0;
+
+			for(int i=0; i < A.Length; i++)
+				if (A[i] == X) {
+					index = i;
+					position = A[i];
+					break;
+				}
+
+			int[] B = new int[index+1];
+			for (int i = 0; i <= index; i++)
+				B[i] = A[i];
+
+			for (int j=position; j > 0; j--)
+				if (!B.Contains(j)) {
+					index = -1;
+					break;
+				}
+
+			return index;
 		}
 	}
 }
